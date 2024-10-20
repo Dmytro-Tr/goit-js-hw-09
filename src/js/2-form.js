@@ -35,7 +35,7 @@ function populateTextAres() {
   const savedData = localStorage.getItem(STORAGE_KEY);
   if (savedData) {
     formData = JSON.parse(savedData);
-    feedbackForm.elements.email.value = savedData.email || '';
-    feedbackForm.elements.message.value = savedData.message || '';
+    feedbackForm.elements.email.value = formData.email || '';
+    feedbackForm.elements.message.value = formData.message || '';
   }
 }
